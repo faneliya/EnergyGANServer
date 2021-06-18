@@ -14,7 +14,7 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+# BASE_DIR = 'C:\DEVEL\DEVEL_DATA\EnergyForcast\EnergyGANServer'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
@@ -54,7 +54,7 @@ ROOT_URLCONF = 'EnergyGANServer.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
+        'DIRS': [BASE_DIR + '/templates']
         ,
         'APP_DIRS': True,
         'OPTIONS': {
